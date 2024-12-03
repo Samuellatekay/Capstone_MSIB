@@ -1,0 +1,26 @@
+NORMAL
+2024-11-11T13:12:56.161859+07:00 Regi sudo: pam_unix(sudo:session): session closed for user root
+2024-11-11T13:12:56.161859+07:00 Regi sudo: pam_unix(sudo:session): session closed for user root
+2024-11-11T13:13:04.442291+07:00 Regi sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/rsyslogd
+2024-11-11T13:13:04.442291+07:00 Regi sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/rsyslogd
+2024-11-11T13:13:04.443748+07:00 Regi sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2024-11-11T13:13:04.443748+07:00 Regi sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2024-11-11T13:13:04.447541+07:00 Regi sudo: pam_unix(sudo:session): session closed for user root
+2024-11-11T13:13:04.447541+07:00 Regi sudo: pam_unix(sudo:session): session closed for user root
+2024-11-11T13:13:18.718142+07:00 Regi sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/rsyslogd
+2024-11-11T13:13:18.718142+07:00 Regi sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/rsyslogd
+2024-11-11T13:13:18.719286+07:00 Regi sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2024-11-11T13:13:18.719286+07:00 Regi sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2024-11-11T13:13:18.724456+07:00 Regi sudo: pam_unix(sudo:session): session closed for user root
+2024-11-11T13:13:18.724456+07:00 Regi sudo: pam_unix(sudo:session): session closed for user root
+
+
+SQLI
+2024-11-11T13:17:45.789012+07:00 Regi webapp: SQL Injection attempt detected
+2024-11-11T13:17:45.789012+07:00 Regi webapp: Source IP: 192.168.0.10
+2024-11-11T13:17:45.789012+07:00 Regi webapp: User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36
+2024-11-11T13:17:45.789012+07:00 Regi webapp: Endpoint: /login
+2024-11-11T13:17:45.789012+07:00 Regi webapp: Parameters: { "username": "admin' OR '1'='1", "password": "any" }
+2024-11-11T13:17:45.789012+07:00 Regi webapp: Injection Pattern Detected: "' OR '1'='1"
+2024-11-11T13:17:45.789012+07:00 Regi webapp: Action Taken: SQL Injection attempt blocked, IP 192.168.0.10 temporarily banned for 24 hours
+2024-11-11T13:17:45.789012+07:00 Regi webapp: pam_unix(sudo:session): session closed for user root

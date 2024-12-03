@@ -1,0 +1,49 @@
+Nov 11 21:33:59 DESKTOP-BIDI3GD sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:07:36 DESKTOP-BIDI3GD sudo:     root : TTY=tty1 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/apt-get install rsyslog
+Nov 11 22:07:36 DESKTOP-BIDI3GD sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Nov 11 22:07:39 DESKTOP-BIDI3GD sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:08:06 DESKTOP-BIDI3GD sudo:     root : TTY=tty1 ; PWD=/var/log ; USER=root ; COMMAND=/usr/sbin/rsyslogd
+Nov 11 22:08:06 DESKTOP-BIDI3GD sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Nov 11 22:08:07 DESKTOP-BIDI3GD sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:54:14 DESKTOP-EMO0Q9R sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:54:22 DESKTOP-EMO0Q9R sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/rsyslogd
+Nov 11 22:54:22 DESKTOP-EMO0Q9R sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Nov 11 22:54:22 DESKTOP-EMO0Q9R sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 22:54:37 DESKTOP-EMO0Q9R sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/rsyslogd
+Nov 11 22:54:37 DESKTOP-EMO0Q9R sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Nov 11 22:54:37 DESKTOP-EMO0Q9R sudo: pam_unix(sudo:session): session closed for user root
+2024-11-11T13:13:14.642693+07:00 LAPTOP-J12VS323 systemd-logind[179]: New seat seat0.
+2024-11-11T13:13:17.577311+07:00 LAPTOP-J12VS323 login[343]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2024-11-11T13:13:17.577495+07:00 LAPTOP-J12VS323 login[343]: PAM adding faulty module: pam_lastlog.so
+2024-11-11T13:13:18.302839+07:00 LAPTOP-J12VS323 login[343]: pam_unix(login:session): session opened for user root(uid=0) by root(uid=0)
+2024-11-11T13:13:18.335121+07:00 LAPTOP-J12VS323 systemd-logind[179]: New session 1 of user root.
+2024-11-11T13:13:18.362393+07:00 LAPTOP-J12VS323 (systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+2024-11-11T13:13:18.589519+07:00 LAPTOP-J12VS323 login[397]: ROOT LOGIN  on '/dev/pts/1'
+2024-11-11T13:14:19.794432+07:00 LAPTOP-J12VS323 systemd-logind[170]: New seat seat0.
+2024-11-11T13:14:21.352117+07:00 LAPTOP-J12VS323 login[294]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2024-11-11T13:14:21.352291+07:00 LAPTOP-J12VS323 login[294]: PAM adding faulty module: pam_lastlog.so
+2024-11-11T10:56:50.877950+07:00 RAY login[401]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2024-11-11T10:56:50.878053+07:00 RAY login[401]: PAM adding faulty module: pam_lastlog.so
+2024-11-11T10:56:51.269361+07:00 RAY login[401]: pam_unix(login:session): session opened for user hanzu(uid=1000) by hanzu(uid=0)
+2024-11-11T10:56:51.281421+07:00 RAY systemd-logind[215]: New session 1 of user hanzu.
+2024-11-11T10:56:51.300339+07:00 RAY (systemd): pam_unix(systemd-user:session): session opened for user hanzu(uid=1000) by hanzu(uid=0)
+2024-11-11T10:57:40.932810+07:00 RAY sudo:    hanzu : TTY=pts/0 ; PWD=/home/hanzu ; USER=root ; COMMAND=/usr/bin/su
+2024-11-11T10:57:40.933051+07:00 RAY sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2024-11-11T10:57:40.938529+07:00 RAY su[567]: (to root) root on pts/2
+2024-11-11T10:57:40.938623+07:00 RAY su[567]: pam_unix(su:session): session opened for user root(uid=0) by hanzu(uid=0)
+2024-11-11T10:57:40.942757+07:00 RAY systemd-logind[215]: New session c1 of user root.
+2024-11-11T10:57:40.955156+07:00 RAY (systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+2024-11-11T13:12:56.161859+07:00 Regi sudo: pam_unix(sudo:session): session closed for user root
+2024-11-11T13:12:56.161859+07:00 Regi sudo: pam_unix(sudo:session): session closed for user root
+2024-11-11T13:13:04.442291+07:00 Regi sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/rsyslogd
+2024-11-11T13:13:04.442291+07:00 Regi sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/rsyslogd
+2024-11-11T13:13:04.443748+07:00 Regi sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2024-11-11T13:13:04.443748+07:00 Regi sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2024-11-11T13:13:04.447541+07:00 Regi sudo: pam_unix(sudo:session): session closed for user root
+2024-11-11T13:13:04.447541+07:00 Regi sudo: pam_unix(sudo:session): session closed for user root
+2024-11-11T13:13:18.718142+07:00 Regi sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/rsyslogd
+2024-11-11T13:13:18.718142+07:00 Regi sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/rsyslogd
+2024-11-11T13:13:18.719286+07:00 Regi sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2024-11-11T13:13:18.719286+07:00 Regi sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2024-11-11T13:13:18.724456+07:00 Regi sudo: pam_unix(sudo:session): session closed for user root
+2024-11-11T13:13:18.724456+07:00 Regi sudo: pam_unix(sudo:session): session closed for user root
