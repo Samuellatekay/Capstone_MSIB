@@ -1,0 +1,13 @@
+httpsqadrlabs.compostmembuat-simple-login-dan-register-menggunakan-codeigniter#step-6-coding-library
+
+Kesimpulan Proyek Sistem Login dan Registrasi Menggunakan CodeIgniter 3
+
+Proyek ini berhasil membangun aplikasi web berbasis CodeIgniter 3 yang memungkinkan pengguna untuk melakukan registrasi, login, dan mengakses dashboard pribadi mereka dengan pengelolaan sesi yang aman. Sistem ini memanfaatkan prinsip Model-View-Controller (MVC) untuk memisahkan logika bisnis, tampilan, dan pengelolaan data, sehingga memudahkan pengembangan dan pemeliharaan aplikasi.
+
+Fitur utama dari aplikasi ini mencakup:
+
+Registrasi Akun: Pengguna dapat mendaftar dengan memasukkan informasi yang valid, seperti nama, username, email, dan password.
+Login dan Autentikasi: Setelah mendaftar, pengguna dapat login menggunakan username dan password yang sudah terdaftar. Sistem melakukan validasi dan memastikan hanya pengguna yang terautentikasi yang dapat mengakses halaman dashboard.
+Dashboard: Setelah login berhasil, pengguna dapat mengakses halaman dashboard yang menyambut mereka dengan pesan selamat datang, serta menyediakan tombol untuk logout.
+Pesan Notifikasi: Aplikasi menampilkan pesan kesalahan atau notifikasi sukses dengan menggunakan flash data, yang memberi umpan balik kepada pengguna tentang status login atau registrasi mereka.
+Desain aplikasi menggunakan Bootstrap 4, yang membuat tampilan responsif dan menarik di berbagai perangkat, mulai dari desktop hingga perangkat mobile. Sistem ini juga memperhatikan keamanan, dengan memastikan password disimpan secara aman dan memvalidasi input untuk menghindari kesalahan atau penyalahgunaan data.
