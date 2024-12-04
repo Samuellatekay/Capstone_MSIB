@@ -9,6 +9,6 @@ class Dashboard extends CI_Controller {
 
    //Load Halaman dashboard
    public function index() {
-       $this->load->view('account/v_dashboard');
+       $this->load->view('dashboard/v_dashboard');
    }
 }
