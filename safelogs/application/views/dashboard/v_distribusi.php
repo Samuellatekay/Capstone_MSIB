@@ -49,7 +49,7 @@
               <h5><a href="<?php echo site_url('dashboard'); ?>">Dashboard</a></h5>
             </li>
             <li class="nav-item">
-              <h5><a href="#">Distribusi Log</a></h5>
+              <h5><a href="#">Metrik Akurasi</a></h5>
             </li>
             <li class="nav-item">
               <h5><a href="<?php echo site_url('top5'); ?>">Top 5 IP</a></h5>
@@ -64,33 +64,33 @@
                 </div>
 
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-5 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Distribusi Log</h1>
+                    <h1 class="h2">Metrik Akurasi</h1>
                 </div>
                 <div class="table-responsive">
                     <table class="table table-striped table-hover">
                         <thead class="table-dark">
                             <tr>
                                 <th>#</th>
-                                <th>Log ID</th>
-                                <th>Type</th>
-                                <th>Timestamp</th>
-                                <th>Status</th>
+                                <th>Kategori</th>
+                                <th>Total Log</th>
+                                <th>Terdeteksi Benar</th>
+                                <th>Akurasi</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>LOG12345</td>
                                 <td>Normal</td>
-                                <td>2024-12-01 14:23:00</td>
-                                <td><span class="badge bg-success">Processed</span></td>
+                                <td>83</td>
+                                <td>84</td>
+                                <td>100%</td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>LOG12346</td>
-                                <td>SQLI</td>
-                                <td>2024-12-01 14:25:00</td>
-                                <td><span class="badge bg-danger">Failed</span></td>
+                                <td>Brute force</td>
+                                <td>2</td>
+                                <td>0</td>
+                                <td>%</td>
                             </tr>
                         </tbody>
                     </table>

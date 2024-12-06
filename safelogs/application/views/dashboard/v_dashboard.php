@@ -49,7 +49,7 @@
               <h5><a href="#">Dashboard</a></h5>
             </li>
             <li class="nav-item">
-              <h5><a href="<?php echo site_url('distribusi'); ?>">Distribusi Log</a></h5>
+              <h5><a href="<?php echo site_url('distribusi'); ?>">Metrik Akurasi</a></h5>
             </li>
             <li class="nav-item">
               <h5><a href="<?php echo site_url('top5'); ?>">Top 5 IP</a></h5>
@@ -93,67 +93,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-5 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Distribusi Log</h1>
-                </div>
-                <div class="table-responsive">
-                    <table class="table table-striped table-hover">
-                        <thead class="table-dark">
-                            <tr>
-                                <th>#</th>
-                                <th>Log ID</th>
-                                <th>Type</th>
-                                <th>Timestamp</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>LOG12345</td>
-                                <td>Normal</td>
-                                <td>2024-12-01 14:23:00</td>
-                                <td><span class="badge bg-success">Processed</span></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>LOG12346</td>
-                                <td>SQLI</td>
-                                <td>2024-12-01 14:25:00</td>
-                                <td><span class="badge bg-danger">Failed</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-5 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Top 5 IP Penyerang</h1>
-                </div>
-                <div class="table-responsive">
-                    <table class="table table-striped table-hover">
-                        <thead class="table-dark">
-                            <tr>
-                                <th>#</th>
-                                <th>IP Address</th>
-                                <th>Attempts</th>
-                                <th>Last Attack</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>192.168.1.1</td>
-                                <td>150</td>
-                                <td>2024-12-01 13:45:00</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>203.0.113.5</td>
-                                <td>120</td>
-                                <td>2024-12-01 13:50:00</td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
             </main>
         </div>

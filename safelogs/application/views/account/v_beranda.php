@@ -87,7 +87,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <div class="container main-container">
     <div class="main-text">
       <h1>Selamat Datang di SafeLogs!</h1>
-      <p class="lead">SafeLogs adalah platform log monitoring yang dirancang untuk membantu Anda mengelola, menganalisis, dan melindungi data log dengan mudah dan aman.</p>
+      <p class="lead">SafeLogs adalah platform log monitoring yang dirancang untuk membantu mengelola, menganalisis, dan melindungi data log dengan mudah dan aman.</p>
       <p>Dengan teknologi canggih dan antarmuka yang ramah pengguna, SafeLogs menjadi solusi ideal bagi organisasi Anda untuk meningkatkan keamanan dan efisiensi operasional.</p>
     </div>
 

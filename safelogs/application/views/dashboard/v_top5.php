@@ -49,7 +49,7 @@
               <h5><a href="<?php echo site_url('dashboard'); ?>">Dashboard</a></h5>
             </li>
             <li class="nav-item">
-              <h5><a href="<?php echo site_url('distribusi'); ?>">Distribusi Log</a></h5>
+              <h5><a href="<?php echo site_url('distribusi'); ?>">Metrik Akurasi</a></h5>
             </li>
             <li class="nav-item">
               <h5><a href="#">Top 5 IP</a></h5>
@@ -71,8 +71,8 @@
               <tr>
                 <th>#</th>
                 <th>IP Address</th>
-                <th>Attempts</th>
-                <th>Last Attack</th>
+                <th>Jumlah</th>
+                <th>Jenis Serangan</th>
               </tr>
             </thead>
             <tbody>
@@ -80,13 +80,13 @@
                 <td>1</td>
                 <td>192.168.1.1</td>
                 <td>150</td>
-                <td>2024-12-01 13:45:00</td>
+                <td>Brute Force</td>
               </tr>
               <tr>
                 <td>2</td>
                 <td>203.0.113.5</td>
                 <td>120</td>
-                <td>2024-12-01 13:50:00</td>
+                <td>Normal</td>
               </tr>
             </tbody>
           </table>
