@@ -1,8 +1,9 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SafeLogs</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -36,10 +37,9 @@
       width: 90%;
     }
   </style>
-  
 </head>
 <body>
-  <div class="container-fluid">
+    <div class="container-fluid">
     <div class="row">
       <nav class="col-md-2 d-none d-md-block sidebar">
         <div class="sidebar-sticky">
@@ -76,24 +76,23 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>192.168.1.1</td>
-                <td>150</td>
-                <td>Brute Force</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>203.0.113.5</td>
-                <td>120</td>
-                <td>Normal</td>
-              </tr>
+                <?php $no = 1; ?>
+                <?php foreach ($attack_data as $data): ?>
+                <tr>
+                    <td><?= $no++; ?></td>
+                    <td><?= $data['ip']; ?></td>
+                    <td><?= $data['jumlah']; ?></td>
+                    <td><?= $data['attack_type']; ?></td>
+                </tr>
+                <?php endforeach; ?>
             </tbody>
           </table>
         </div>
       </main>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+    
 </body>
 </html>
