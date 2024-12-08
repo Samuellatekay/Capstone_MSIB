@@ -17,11 +17,15 @@ class Distribusi extends CI_Controller {
             $json_data = file_get_contents($json_file_path);
             $data = json_decode($json_data, true);
 
-            // Ambil hanya bagian 'accuracy_metrics' dari data
+            // Ambil bagian 'accuracy_metrics' dan 'overall_accuracy' dari data
             $accuracy_metrics = isset($data['metrics']['accuracy_metrics']) ? $data['metrics']['accuracy_metrics'] : [];
+            $overall_accuracy = isset($data['metrics']['overall_accuracy']) ? $data['metrics']['overall_accuracy'] : null;
 
             // Kirim data ke view
-            $this->load->view('dashboard/v_akurasi', ['accuracy_metrics' => $accuracy_metrics]);
+            $this->load->view('dashboard/v_akurasi', [
+                'accuracy_metrics' => $accuracy_metrics,
+                'overall_accuracy' => $overall_accuracy
+            ]);
         } else {
             // Menangani jika file tidak ditemukan
             echo "File JSON tidak ditemukan.";

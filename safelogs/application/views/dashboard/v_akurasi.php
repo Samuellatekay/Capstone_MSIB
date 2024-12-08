@@ -76,6 +76,7 @@
                             </tr>
                         </thead>
                         <tbody>
+                          <h2>Akurasi Keseluruhan: <?= htmlspecialchars($overall_accuracy); ?>%</h2>
                             <?php foreach ($accuracy_metrics as $model => $metrics): ?>
                             <tr>
                                 <td><?= $model ?></td>
