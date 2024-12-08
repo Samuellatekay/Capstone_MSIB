@@ -63,33 +63,39 @@
                     <h1 class="h2">Selamat datang di halaman dashboard, <strong><?php echo ucfirst($this->session->userdata('username')); ?></strong>!</h1>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="card mb-3">
                             <div class="card-body">
                                 <h5 class="card-title">Normal</h5>
                                 <i class="fa-solid fa-user float-end" style="font-size: 50px;"></i>
-                                <p class="card-text">120</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                                <p class="display-5 card-text"><?= $log_data['Normal']; ?></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="card mb-3">
                             <div class="card-body">
                                 <h5 class="card-title">SQLI</h5>
                                 <img width="48" height="48" src="https://img.icons8.com/external-outline-black-m-oki-orlando/32/external-sql-injection-cyber-security-outline-outline-black-m-oki-orlando.png" class="float-end" style="font-size: 50px;"></img>
-                                <p class="card-text">20</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                                <p class="display-5 card-text"><?= $log_data['SQL Injection']; ?></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="card mb-3">
                             <div class="card-body">
                                 <h5 class="card-title">Brute Force</h5>
                                 <img width="58" height="58" src="https://img.icons8.com/quill/100/unlock-2.png" alt="unlock-2" class="float-end" style="font-size: 50px;"></img>
-                                <p class="card-text">30</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                                <p class="display-5 card-text"><?= $log_data['Brute Force']; ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Total Log</h5>
+                                <img width="50" height="50" src="https://img.icons8.com/isometric-line/50/edit-property.png" alt="edit-property" class="float-end" style="font-size: 50px;"></img>
+                                <p class="display-5 card-text"><?= $total_logs; ?></p>
                             </div>
                         </div>
                     </div>
