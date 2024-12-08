@@ -77,7 +77,7 @@
                         <div class="card mb-3">
                             <div class="card-body">
                                 <h5 class="card-title">SQLI</h5>
-                                <i class="fa-solid fa-box float-end" style="font-size: 50px;"></i>
+                                <img width="48" height="48" src="https://img.icons8.com/external-outline-black-m-oki-orlando/32/external-sql-injection-cyber-security-outline-outline-black-m-oki-orlando.png" class="float-end" style="font-size: 50px;"></img>
                                 <p class="card-text">20</p>
                                 <a href="#" class="btn btn-primary">View</a>
                             </div>
@@ -87,7 +87,7 @@
                         <div class="card mb-3">
                             <div class="card-body">
                                 <h5 class="card-title">Brute Force</h5>
-                                <i class="fa-solid fa-chart-line float-end" style="font-size: 50px;"></i>
+                                <img width="58" height="58" src="https://img.icons8.com/quill/100/unlock-2.png" alt="unlock-2" class="float-end" style="font-size: 50px;"></img>
                                 <p class="card-text">30</p>
                                 <a href="#" class="btn btn-primary">View</a>
                             </div>
