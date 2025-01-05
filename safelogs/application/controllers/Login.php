@@ -3,6 +3,16 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Login extends CI_Controller {
+	public $form_validation;
+	public $session;
+	public $simple_login;
+	public $m_account;
+	public $log;
+	public $utf8;
+	public $uri;
+	public $route;
+	public $output;
+	public $security;
 
    public function index() {
 

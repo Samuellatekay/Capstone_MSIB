@@ -2,6 +2,10 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Dashboard extends CI_Controller {
+    public $form_validation;
+    public $session;
+    public $simple_login;
+    public $m_account;
 
     public function __construct() {
         parent::__construct();
@@ -13,7 +17,7 @@ class Dashboard extends CI_Controller {
 
     public function index() {
         // Path file JSON
-        $filePath = 'C:\laragon\www\capstone\backendd\hasil_evaluasi_model.json';
+        $filePath = '/var/www/html/capstone/backendd/hasil_evaluasi_model.json';
 
         // Inisialisasi default data
         $viewData = [
@@ -22,6 +26,7 @@ class Dashboard extends CI_Controller {
             'log_data' => [
                 'Normal' => 0,
                 'SQL Injection' => 0,
+                'XSS' => 0,
                 'Brute Force' => 0,
             ],
         ];
@@ -33,15 +38,17 @@ class Dashboard extends CI_Controller {
             $data = json_decode($jsonData, true);
 
             // Update data jika file JSON valid
-            if (!empty($data['metrics'])) {
-                $viewData['total_logs'] = $data['metrics']['total_logs'] ?? 0;
+            if (!empty($data['metrics_test'])) {
+                $viewData['total_logs'] = $data['metrics_test']['total_logs'] ?? 0;
+                $distribution = $data['metrics_test']['distribution'] ?? [];
 
-                // Distribusi dalam bentuk array numerik
-                $distribution = $data['metrics']['distribution'] ?? [];
-                if (count($distribution) === 3) {
-                    $viewData['log_data']['Normal'] = $distribution[0] ?? 0;
-                    $viewData['log_data']['SQL Injection'] = $distribution[1] ?? 0;
-                    $viewData['log_data']['Brute Force'] = $distribution[2] ?? 0;
+                // Memetakan distribusi sesuai kategori
+                if (count($distribution) === 4) {
+                    $viewData['log_data']['Normal'] = $distribution[0] ?? 0;        // Normal logs
+                    $viewData['log_data']['SQL Injection'] = $distribution[1] ?? 0; // SQL Injection logs
+                    $viewData['log_data']['Brute Force'] = $distribution[2] ?? 0;   // Brute Force logs
+                    $viewData['log_data']['XSS'] = $distribution[3] ?? 0;          // XSS logs
+                    $viewData['total_logs'] = array_sum($distribution);            // Total log
                 }
             }
         }

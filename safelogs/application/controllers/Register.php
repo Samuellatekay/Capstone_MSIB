@@ -3,6 +3,11 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Register extends CI_Controller {
+	public $form_validation;
+        public $session;
+        public $simple_login;
+        public $m_account;
+
 
    function __construct(){
        parent::__construct();

@@ -1,169 +1,72 @@
 {
-    "metrics": {
-        "total_logs": 50,
+    "metrics_train": {
         "distribution": [
-            40,
-            5,
-            5
+            -2,
+            25,
+            124,
+            6
         ],
         "accuracy_metrics": {
             "Normal": {
-                "total": 40,
-                "correct": 40
+                "total": 29,
+                "correct": 0
             },
             "SQL Injection": {
-                "total": 5,
-                "correct": 5
+                "total": 153,
+                "correct": 25
             },
             "Brute Force": {
-                "total": 5,
-                "correct": 3
+                "total": 153,
+                "correct": 124
+            },
+            "XSS": {
+                "total": 153,
+                "correct": 6
             }
         },
-        "overall_accuracy": 96.0,
+        "overall_accuracy": 101.30718954248366,
         "ip_analysis": {
-            "unique_ips": 4,
+            "unique_ips": 1,
             "top_attacker_ips": {
-                "unknown": 4,
-                "192.168.1.100": 3,
-                "192.168.0.10": 1
+                "172.17.144.1": 124
             },
             "attacks_per_ip": {
-                "('192.168.0.10', 'SQL Injection')": 1,
-                "('192.168.1.100', 'Brute Force')": 3,
-                "('unknown', 'SQL Injection')": 4
-            }
-        },
-        "attack_analysis": {
-            "attack_timeline": {
-                "('2024-11-11T10:59:35', 'SQL Injection')": 1,
-                "('2024-11-11T13:13:17', 'SQL Injection')": 1,
-                "('2024-11-11T13:14:21', 'SQL Injection')": 1,
-                "('2024-11-11T13:17:45', 'SQL Injection')": 2,
-                "('Nov 11 21:30:17', 'Brute Force')": 1,
-                "('Nov 11 21:30:21', 'Brute Force')": 1,
-                "('Nov 11 21:30:25', 'Brute Force')": 1
-            },
-            "attack_patterns": {
-                "SQL Injection": 5,
-                "Brute Force": 3
+                "(172.17.144.1, Brute Force)": 118,
+                "(172.17.144.1, XSS)": 6
             }
         }
     },
-    "attack_characteristics": {
-        "sql_patterns": [
-            {
-                "timestamp": "2024-11-11T13:17:45",
-                "ip": "unknown",
-                "username": "none",
-                "raw_log": "2024-11-11T13:17:45.789012+07:00 Regi webapp: SQL Injection attempt detected",
-                "attack_type": "SQL Injection",
-                "failed_attempt": 0,
-                "total_failed_attempts": 0,
-                "source_file": "log_sql.log",
-                "is_attack": true
-            },
-            {
-                "timestamp": "2024-11-11T13:17:45",
-                "ip": "192.168.0.10",
-                "username": "none",
-                "raw_log": "2024-11-11T13:17:45.789012+07:00 Regi webapp: Action Taken: SQL Injection attempt blocked, IP 192.168.0.10 temporarily banned for 24 hours",
-                "attack_type": "SQL Injection",
-                "failed_attempt": 0,
-                "total_failed_attempts": 0,
-                "source_file": "log_sql.log",
-                "is_attack": true
-            },
-            {
-                "timestamp": "2024-11-11T10:59:35",
-                "ip": "unknown",
-                "username": "none",
-                "raw_log": "2024-11-11T10:59:35.213423+07:00 RAY sudo:    hanzu : TTY=pts/1 ; PWD=/home/hanzu ; USER=root ; COMMAND=SELECT * FROM users WHERE username = '' OR 1=1 --;",
-                "attack_type": "SQL Injection",
-                "failed_attempt": 0,
-                "total_failed_attempts": 0,
-                "source_file": "log_sql.log",
-                "is_attack": true
-            },
-            {
-                "timestamp": "2024-11-11T13:13:17",
-                "ip": "unknown",
-                "username": "none",
-                "raw_log": "2024-11-11T13:13:17.577311+07:00 LAPTOP-J12VS323 login[343]: SQL Injection attempt detected: Input contains ' OR 1=1 -- '",
-                "attack_type": "SQL Injection",
-                "failed_attempt": 0,
-                "total_failed_attempts": 0,
-                "source_file": "log_sql.log",
-                "is_attack": true
-            },
-            {
-                "timestamp": "2024-11-11T13:14:21",
-                "ip": "unknown",
-                "username": "none",
-                "raw_log": "2024-11-11T13:14:21.352117+07:00 LAPTOP-J12VS323 login[294]: SQL Injection attempt detected: Input contains ' OR 1=1 -- '",
-                "attack_type": "SQL Injection",
-                "failed_attempt": 0,
-                "total_failed_attempts": 0,
-                "source_file": "log_sql.log",
-                "is_attack": true
-            }
+    "metrics_test": {
+        "total_logs": 75,
+        "distribution": [
+            75,
+            0,
+            0,
+            0
         ],
-        "brute_force_ips": [
-            {
-                "timestamp": "Nov 11 21:30:12",
-                "ip": "192.168.1.100",
-                "username": "admin",
-                "raw_log": "Nov 11 21:30:12 DESKTOP-BIDI3GD sshd[12345]: Failed password for invalid user admin from 192.168.1.100 port 54321 ssh2",
-                "attack_type": "Brute Force",
-                "failed_attempt": 1,
-                "total_failed_attempts": 1,
-                "source_file": "log_bruteforce.log",
-                "is_attack": false
+        "accuracy_metrics": {
+            "Normal": {
+                "total": 75,
+                "correct": 0
             },
-            {
-                "timestamp": "Nov 11 21:30:14",
-                "ip": "192.168.1.100",
-                "username": "admin",
-                "raw_log": "Nov 11 21:30:14 DESKTOP-BIDI3GD sshd[12345]: Failed password for invalid user admin from 192.168.1.100 port 54321 ssh2",
-                "attack_type": "Brute Force",
-                "failed_attempt": 1,
-                "total_failed_attempts": 2,
-                "source_file": "log_bruteforce.log",
-                "is_attack": false
+            "SQL Injection": {
+                "total": 75,
+                "correct": 0
             },
-            {
-                "timestamp": "Nov 11 21:30:17",
-                "ip": "192.168.1.100",
-                "username": "admin",
-                "raw_log": "Nov 11 21:30:17 DESKTOP-BIDI3GD sshd[12345]: Failed password for invalid user admin from 192.168.1.100 port 54321 ssh2",
-                "attack_type": "Brute Force",
-                "failed_attempt": 1,
-                "total_failed_attempts": 3,
-                "source_file": "log_bruteforce.log",
-                "is_attack": true
+            "Brute Force": {
+                "total": 75,
+                "correct": 0
             },
-            {
-                "timestamp": "Nov 11 21:30:21",
-                "ip": "192.168.1.100",
-                "username": "root",
-                "raw_log": "Nov 11 21:30:21 DESKTOP-BIDI3GD sshd[12345]: Failed password for root from 192.168.1.100 port 54321 ssh2",
-                "attack_type": "Brute Force",
-                "failed_attempt": 1,
-                "total_failed_attempts": 4,
-                "source_file": "log_bruteforce.log",
-                "is_attack": true
-            },
-            {
-                "timestamp": "Nov 11 21:30:25",
-                "ip": "192.168.1.100",
-                "username": "root",
-                "raw_log": "Nov 11 21:30:25 DESKTOP-BIDI3GD sshd[12345]: Failed password for root from 192.168.1.100 port 54321 ssh2",
-                "attack_type": "Brute Force",
-                "failed_attempt": 1,
-                "total_failed_attempts": 5,
-                "source_file": "log_bruteforce.log",
-                "is_attack": true
+            "XSS": {
+                "total": 75,
+                "correct": 0
             }
-        ]
+        },
+        "overall_accuracy": 0.0,
+        "ip_analysis": {
+            "unique_ips": 0,
+            "top_attacker_ips": {},
+            "attacks_per_ip": {}
+        }
     }
 }

@@ -3,6 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Top5 extends CI_Controller {
 
+        public $form_validation;
+        public $session;
+        public $simple_login;
+        public $m_account;
+
     public function __construct() {
         parent::__construct();
         // Load URL helper untuk redirect jika perlu
@@ -11,7 +16,7 @@ class Top5 extends CI_Controller {
 
     public function index() {
         // Path ke file JSON hasil evaluasi
-        $json_file_path = 'C:\laragon\www\capstone\backendd\hasil_evaluasi_model.json'; // Sesuaikan dengan path sebenarnya
+        $json_file_path = '/var/www/html/capstone/backendd/hasil_evaluasi_model.json'; // Sesuaikan dengan path sebenarnya
 
         if (file_exists($json_file_path)) {
             // Membaca isi file JSON
@@ -19,7 +24,7 @@ class Top5 extends CI_Controller {
             $data = json_decode($json_data, true);
 
             // Ambil bagian 'ip_analysis' dari data dan memprosesnya
-            $ip_analysis = isset($data['metrics']['ip_analysis']['attacks_per_ip']) ? $data['metrics']['ip_analysis']['attacks_per_ip'] : [];
+            $ip_analysis = isset($data['metrics_test']['ip_analysis']['attacks_per_ip']) ? $data['metrics_test']['ip_analysis']['attacks_per_ip'] : [];
 
             // Siapkan array untuk data yang akan ditampilkan
             $attack_data = [];

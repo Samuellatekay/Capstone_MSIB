@@ -22,7 +22,7 @@ def parse_log_line(line):
     brute_force_pattern = re.compile(r'Failed password for (?:invalid user )?(\w+) from (\d+\.\d+\.\d+\.\d+)')
     
     # Pattern untuk SQL Injection
-    sql_pattern = re.compile(r'.*SQL Injection.*|.*Input contains.*OR 1=1.*|.*SELECT \* FROM users WHERE.*')
+    sql_pattern = re.compile(r'.*SQL Injection.*|.*Input contains.*OR 1=1.*|.*SELECT \* FROM users WHERE.*|.*Mozilla/5.0.*')
     
     # Ekstrak timestamp
     timestamp_match = re.search(r'(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}|\w{3}\s+\d{1,2}\s+\d{2}:\d{2}:\d{2})', line)
@@ -219,7 +219,8 @@ try:
     ]
     
     test_files = [
-        'tidak.log'
+        '/var/log/apache2/access.log',
+        '/var/log/auth.log'
     ]
     
     # Proses dataset untuk training

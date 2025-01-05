@@ -81,6 +81,15 @@
           <div class="col-md-3">
             <div class="card mb-3">
               <div class="card-body">
+                <h5 class="card-title">XSS</h5>
+                <img width="58" height="58" src="https://img.icons8.com/external-linear-outline-icons-papa-vector/78/external-XSS-hacker-attack-linear-outline-icons-papa-vector.png" alt="xss" class="float-end"/>
+                <p class="display-5 card-text"><?= $log_data['XSS']; ?></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card mb-3">
+              <div class="card-body">
                 <h5 class="card-title">Brute Force</h5>
                 <img width="58" height="58" src="https://img.icons8.com/quill/100/unlock-2.png" alt="unlock-2" class="float-end">
                 <p class="display-5 card-text"><?= $log_data['Brute Force']; ?></p>
@@ -117,12 +126,12 @@
   <script>
     const ctx = document.getElementById('logPieChart').getContext('2d');
     const data = {
-      labels: ['Normal', 'SQL Injection', 'Brute Force'],
+      labels: ['Normal', 'SQL Injection','XSS', 'Brute Force'],
       datasets: [{
         label: 'Distribusi Log',
-        data: [<?= $log_data['Normal']; ?>, <?= $log_data['SQL Injection']; ?>, <?= $log_data['Brute Force']; ?>],
-        backgroundColor: ['#47B39C', '#EC6B56', '#FFC154'],
-        borderColor: ['#47B39C', '#EC6B56', '#FFC154'],
+        data: [<?= $log_data['Normal']; ?>, <?= $log_data['SQL Injection']; ?>,<?= $log_data['XSS']; ?>, <?= $log_data['Brute Force']; ?>],
+        backgroundColor: ['#FCC737', '#F26B0F', '#E73879','#7E1891'],
+        borderColor: ['#FCC737', '#F26B0F', '#E73879','#7E1891'],
         borderWidth: 1
       }]
     };
@@ -135,7 +144,7 @@
           legend: {
             position: 'bottom',  // Menempatkan legenda di bawah pie chart
             labels: {
-              boxWidth: 20,      // Ukuran kotak label
+              boxWidth: 10,      // Ukuran kotak label
               padding: 10        // Jarak antar label
             }
           }

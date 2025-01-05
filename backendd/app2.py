@@ -221,7 +221,7 @@ try:
         ]
         
         test_files = [
-            'tidak.log'
+            '/var/log/auth.log'
         ]   
         
         # Proses dataset untuk training
@@ -294,8 +294,8 @@ try:
         
         print("\nHasil evaluasi telah disimpan ke 'hasil_evaluasi_model.xlsx'")
         
-        # Tunggu 10 detik sebelum mengulang
-        time.sleep(10)
+        # Tunggu 5 detik sebelum mengulang
+        time.sleep(5)
 
 except Exception as e:
     print(f"Error: {str(e)}")

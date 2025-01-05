@@ -203,7 +203,7 @@ try:
         ]
         
         test_files = [
-            'tidak.log'
+            '/var/log/auth.log'
         ]   
         
         # Proses dataset untuk training
