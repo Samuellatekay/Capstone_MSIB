@@ -1,9 +1,11 @@
 A. Untuk Backend
-1. menyalakan environment di folder backendd 
+1. menyalakan environment di folder backendd
+
    source myenv/bin/activate
    
-3. Install pandas
-    pip install pandas
+4. Install pandas
+  
+   pip install pandas
 
 B. Untuk frontend
 1. Masuk dalam database dan Buat database
